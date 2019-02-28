@@ -1,55 +1,96 @@
 <!DOCTYPE html>
     <head> 
-
-
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="campaign.css">
+        <link href="https://fonts.googleapis.com/css?family=Chonburi|Srisakdi" rel="stylesheet">
     </head>
 
-    <body>
-
-        <div>
-            <h1> Penguin For Constable</h1>
+    <body >
+ 
+    <div class="jumbotron jumbotron-fluid">
         
-        </div>
-
-        <h2> Keep the Peace or end up in Pieces</h2>
-
+            <div class="container d-flex justify-content-center" id="logo">
+                <div class="d-inline-flex">
+                    <h1 class="display-3">   <strong>  Vote Penguin  <img src="photos/evil penguin.png" height="175" width="155" alt="Penguin logo">  For Constable</strong></h1>
+                </div>
+                        <h4>Keep the Peace or end up in Pieces</h4>
+            </div>
+        
+    </div>
+    
+    <div class="container" id="middle">
         <div class="row">
             <div class="col-sm-4">
                 <div class="card">
                     <div class="card-body">
-                        <img src="photos/penguin photo.jpg"rounded" alt="Penguin Photo">
+                        <img src="photos/penguin photo.jpg" alt="Penguin Photo">
                         <h1>Oswald Cobblepot</h1>
-                        <h2>The gentleman of crime</h2>
+                        <h2>The Gentleman of Crime</h2>
                         <p>
                             As a Gotham native I am disappointed in how the GPD has allowed the city to be overrun with Crime.  It is unsafe, there are no resources and no way out of the city. When elected, I vow to reinstate crime licenses to regulate criminal activity.  I will also send rations to civillions in need so none of my constituents go hungry. Lastly I promise to find a way out of Gotham, for a price. do whats best for the city and vote Oswald for Constable <br>
-                            If you know whats good for you.
+                            <strong>If you know whats good for you.</strong>
                         </p>
                     </div>
                 </div>
             </div>
+    <div class="container" id="register">
             <div class="col-sm-8">  
                 <div class="card">
                     <div class="card-body">
                         <form>
                             <div class="form-group">
-                                <label for="questions">Questions for the candidate:</label>
+                                <label for="questions">Questions for the Candidate:</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
             
                         </form>
                     </div>
-                <form>
-                    <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">Enter your info to keep up with us!</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="First Name">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                    </div>
-                    <button type="button" class="btn btn-outline-success">Submit</button>
-                </form>
+                    <form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Enter your info to keep up with us!</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="First Name">
+                            <input type="text" class="form-control" placeholder="Last Name">
+                        </div>
+                        <button type="button" class="btn btn-outline-success">Submit</button>
+                    </form>
                 </div>
             </div>
+        </div>
+        </div>
+    </div>
+
+
+            <button type="button" class="btn btn-dark btn-block">CLICK HERE TO PLEDGE YOUR ALLIGIANCE</button>
+            <div class="alert alert-dark">
+                <strong>GREAT!</strong> Welcome to the Army!
+              </div>
+
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+        
+                    <div class="modal-header">
+                      <h4 class="modal-title">REMEMBER . . . </h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+              
+                    <div class="modal-body">
+                      DO THE RIGHT THING FOR GOTHAM
+                    </div>
+              
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-dismiss="modal">I Will</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
     </body>
 </html>
