@@ -8,89 +8,208 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
         <link rel="stylesheet" type="text/css" href="campaign.css">
         <link href="https://fonts.googleapis.com/css?family=Chonburi|Srisakdi" rel="stylesheet">
+
+        <script>
+        
+        $(window).on('load',function(){
+            $('#myModal').modal('show');
+        });
+        </script>
     </head>
 
-    <body >
- 
-    <div class="jumbotron jumbotron-fluid">
+    <body>
+        <div id="nav">
+            <nav class="navbar navbar-expand-sm navbar-dark">
+                    
+                    <a class="navbar-brand" href="#">
+                      <img src="photos/kisspng-umbrella-hat-clip-art-beach-umbrella-5ac7e1636daad7.1856947415230488034492.png" alt="logo" style="width:40px;">
+                    </a>
+                    
+                    
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#card">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#form-1">Licenses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Images</a>
+                      </li>
+                    </ul>
+            </nav>
+        </div>
+                  
+         <div class="jumbotron jumbotron-fluid text-center" id="jumbo">
+
         
-            <div class="container d-flex justify-content-center" id="logo">
-                <div class="d-inline-flex">
-                    <h1 class="display-3">   <strong>  Vote Penguin  <img src="photos/evil penguin.png" height="175" width="155" alt="Penguin logo">  For Constable</strong></h1>
+            <div class="container d-flex ">
+                <div class="row justify-content-center" >
+                    <div class="col">
+                       <p class="display-4">   <strong>Vote Penguin<img src="photos/kisspng-penguin-riddler-oswald-cobblepot-renee-montoya-bat-5afaeb8cbe3810.1104202515263937407791.png" height="5%" width="15%" alt="Penguin logo">For Mayor</strong></p>
+                    <br>
+                        <h2 id="sub" class="font-italic"><strong> "War is jus Politics by another name."</strong></h2>
+                    </div>
                 </div>
-                        <h4>Keep the Peace or end up in Pieces</h4>
             </div>
-        
-    </div>
+        </div>  
     
-    <div class="container" id="middle">
+    
+   <div class="container">
         <div class="row">
-            <div class="col-sm-4">
-                <div class="card">
+            <div class="col-sm-6">
+                <div class="card" id="card">
                     <div class="card-body">
-                        <img src="photos/penguin photo.jpg" alt="Penguin Photo">
-                        <h1>Oswald Cobblepot</h1>
-                        <h2>The Gentleman of Crime</h2>
-                        <p>
+                        <img src="photos/kisspng-robin-lord-taylor-penguin-gotham-tuxedo-batman-5b0083b7bcdca5.2178798415267603757736.png" class="mx-auto d-block img-fluid" alt="Penguin Photo">
+                        <h2 class="text-center"> Oswald Cobblepot</h2>
+                        <h5 class="text-center">The Gentleman of Crime</h5>
+                        <p class="text-center">
                             As a Gotham native I am disappointed in how the GPD has allowed the city to be overrun with Crime.  It is unsafe, there are no resources and no way out of the city. When elected, I vow to reinstate crime licenses to regulate criminal activity.  I will also send rations to civillions in need so none of my constituents go hungry. Lastly I promise to find a way out of Gotham, for a price. do whats best for the city and vote Oswald for Constable <br>
                             <strong>If you know whats good for you.</strong>
                         </p>
                     </div>
+                
+
+
+                
+            <form id="form">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">Enter your info to keep up with us!</span>
+                        </div>
+                        <input type="text" class="form-control" id="input"placeholder="First Name">
+                        <input type="text" class="form-control" id="input"placeholder="Email">
+                    </div>
+                    <button type="button" class="btn btn-outline-light d-flex justify-content-end">Submit</button>
+                </form>
                 </div>
             </div>
-    <div class="container" id="register">
-            <div class="col-sm-8">  
-                <div class="card">
+    
+            <div class="col-sm-6">  
+                <div class="card" id="card">
                     <div class="card-body">
-                        <form>
+                        <form id="form">
                             <div class="form-group">
                                 <label for="questions">Questions for the Candidate:</label>
                                 <textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
-            
-                        </form>
+                            <form id="form-1" action="/action_page.php">
+                                <div class="form-group">
+                                    <h1>Register for your Crime License here</h1>
+                                  <label for="fullname">Full Name:</label>
+                                  <input type="name" class="form-control" id="fullname">
+                                </div>
+                                <div class="form-group">
+                                  <label for="name">Criminal Alias:</label>
+                                  <input type="name" class="form-control" id="CriminalAlias">
+                                </div>
+                                <div class="form-group form-check">
+                                  <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox"> Black Market Sales
+                                  </label>
+                                </div>
+                                <div class="form-group form-check">
+                                        <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox"> Kidnapping
+                                        </label>
+                                      </div>
+
+                                      <div class="form-group form-check">
+                                            <label class="form-check-label">
+                                              <input class="form-check-input" type="checkbox"> Robbery
+                                            </label>
+                                          </div>
+
+                                          <div class="form-group form-check">
+                                                <label class="form-check-label">
+                                                  <input class="form-check-input" type="checkbox"> Murder
+                                                </label>
+                                              </div>
+                                              <a href="#form-1" data-toggle="popover" title="REMEMBER" data-content="40% of earnings are to be relinquished Penguin">Percentage Requirements</a>
+
+                                              <button type="button" class="btn btn-outline-light d-flex justify-content-end">Submit</button>
+
+                              </form>
+                            
+
+                        
+
+                        
                     </div>
-                    <form>
-                        <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">Enter your info to keep up with us!</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="First Name">
-                            <input type="text" class="form-control" placeholder="Last Name">
-                        </div>
-                        <button type="button" class="btn btn-outline-success">Submit</button>
-                    </form>
+                    
                 </div>
             </div>
         </div>
-        </div>
     </div>
+            <div class="container jumbotron jumbotron-fluid text-center" id="carousel">
+              <div id="photos" class="carousel slide" data-ride="carousel">    
+                    <ul class="carousel-indicators">
+                      <li data-target="#photos" data-slide-to="0" class="active"></li>
+                      <li data-target="#photos" data-slide-to="1"></li>
+                      <li data-target="#photos" data-slide-to="2"></li>
+                    </ul>
+                  
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="photos/jim-penguin.jpg" class="img-fluid" alt="Jim and Penguin">
+                      </div>
+                      <div class="carousel-item">
+                        <img src= "photos/gotham-season-4-ep-7.jpg" class="img-fluid" alt="limo">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="photos/gotham-season-3-finale-easter-eggs-batman-references-villains-what-you-missed.jpg" class="img-fluid" alt="Gotham">
+                      </div>
+            
+                    </div>
+                  
+                    
+                    <a class="carousel-control-prev" href="#photos" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#photos" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  
+                </div>
+                <br>
+                <br>
 
-
-            <button type="button" class="btn btn-dark btn-block">CLICK HERE TO PLEDGE YOUR ALLIGIANCE</button>
-            <div class="alert alert-dark">
-                <strong>GREAT!</strong> Welcome to the Army!
-              </div>
-
+                <a href="https://www.youtube.com/watch?v=6xfIsjAZUds"><button type="button" class="btn btn-dark btn-block"> Watch Announcement</button></a>
+            
+        
+            
               <div class="modal" id="myModal">
                 <div class="modal-dialog">
                   <div class="modal-content">
         
-                    <div class="modal-header">
+                    <div class="modal-header bg-dark">
                       <h4 class="modal-title">REMEMBER . . . </h4>
                       <button type="button" class="close" data-dismiss="modal">&times;</button>
                     </div>
               
-                    <div class="modal-body">
+                    <div class="modal-body bg-dark" >
                       DO THE RIGHT THING FOR GOTHAM
                     </div>
               
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">I Will</button>
+                    <div class="modal-footer bg-dark">
+                      <button type="button" class="btn btn-dark" data-dismiss="modal">I Will</button>
                     </div>
               
                   </div>
                 </div>
-              </div>
+            </div>
+
+              <element onload="myScript"></element>
+            </div>
+        </div>
+
+
+
+              <script>
+                    $(document).ready(function(){
+                      $('[data-toggle="popover"]').popover(); 
+                    });
+                    </script>
     </body>
 </html>

@@ -1,8 +1,58 @@
 body {
-    background-image:url("photos/background.jpg")
+    background-image:url("photos/Psd-Carbon-Fiber-Pattern-Background_2.jpg");
     
 }
 
-.card {
-    background-color:darkgray;
+#jumbo{
+    background-color:rgba(37, 36, 37, 0.74);
+    color:white;
+    font-family: 'Chonburi', cursive;
+}
+
+#sub{
+    font-family: 'Srisakdi', cursive;
+}
+
+
+form{
+    background-color:rgba(37, 36, 37, 0.74);
+}
+
+#input{
+    background-color: rgba(37, 36, 37, 0.74);
+}
+
+#card{
+
+    background-color:rgba(37, 36, 37, 0.74);
+    color:white;
+    height:100%;
+}
+
+#nav{
+  background-color: rgba(37, 36, 37, 0.74);
+}
+
+#comment{
+    background-color:grey;
+}
+
+#carousel{
+    background-color:rgba(37, 36, 37, 0.74);
+    margin-top:50px;
+
+}
+
+#myModal {
+    background-color:black;
+}
+
+.modal-footer{
+    color:white;
+}
+.modal-header{
+    color:white;
+}
+.modal-body {
+    color:white;
 }
